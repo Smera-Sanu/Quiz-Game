@@ -1,2 +1,3 @@
-# Quiz-Game
-Source code for an application - Quiz game
+Group 12
+
+-Smera Poovathingal Sanu
