@@ -8,6 +8,10 @@ Quizzique is an exciting quiz game app developed in Swift. Users can register, c
 2.Users can set time limit for the quiz.
 3.Users can adding New Quiz Questions.
 4.Users can select difficulty level.
+5.Users can have Multiple Choice Questions
+6.Users can delete any questions
+7.Users can set scores
+8.Users can have hints
 
 
 
