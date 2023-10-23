@@ -6,4 +6,5 @@
 //
 import Foundation
 
+//var selectedCategory: String?
 var selectedCategory: String?
