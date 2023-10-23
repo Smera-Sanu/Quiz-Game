@@ -13,6 +13,10 @@
 		E239E1A62ACA39D100C79233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A42ACA39D100C79233 /* Main.storyboard */; };
 		E239E1A82ACA39D200C79233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A72ACA39D200C79233 /* Assets.xcassets */; };
 		E239E1AB2ACA39D200C79233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A92ACA39D200C79233 /* LaunchScreen.storyboard */; };
+		E2523D742AE6C3AE00FD2E8A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */; };
+		E2523D762AE6C81C00FD2E8A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */; };
+		E2523D782AE6F52100FD2E8A /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */; };
+		E2F41BF12AE5CE2E00150145 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E239E1A72ACA39D200C79233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E239E1AA2ACA39D200C79233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E239E1AC2ACA39D200C79233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				E239E1A72ACA39D200C79233 /* Assets.xcassets */,
 				E239E1A92ACA39D200C79233 /* LaunchScreen.storyboard */,
 				E239E1AC2ACA39D200C79233 /* Info.plist */,
+				E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */,
+				E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */,
+				E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */,
+				E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */,
 			);
 			path = QuizGame;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F41BF12AE5CE2E00150145 /* CategoryViewController.swift in Sources */,
+				E2523D742AE6C3AE00FD2E8A /* PlayViewController.swift in Sources */,
 				E239E1A32ACA39D100C79233 /* ViewController.swift in Sources */,
 				E239E19F2ACA39D100C79233 /* AppDelegate.swift in Sources */,
+				E2523D782AE6F52100FD2E8A /* GlobalVariables.swift in Sources */,
 				E239E1A12ACA39D100C79233 /* SceneDelegate.swift in Sources */,
+				E2523D762AE6C81C00FD2E8A /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuizGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
