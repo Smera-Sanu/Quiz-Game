@@ -2,43 +2,12 @@
 //  McqViewController.swift
 //  QuizGame
 //
-<<<<<<< Updated upstream
-//  Created by Lipson Shiji on 2023-10-23.
-=======
 //  Created by Lipson Shiji on 2023-10-22.
->>>>>>> Stashed changes
 //
 
 import UIKit
 
 class McqViewController: UIViewController {
-<<<<<<< Updated upstream
-    @IBOutlet weak var scoreLabel: UILabel!
-    
-    @IBOutlet weak var questionLabel: UILabel!
-    
-    @IBOutlet  var answerButton1: RadioButton!
-    
-    @IBOutlet  var answerButton2: RadioButton!
-    @IBOutlet  var answerButton3: RadioButton!
-    @IBOutlet  var answerButton4: RadioButton!
-    
-    var questions: [QuizQuestion] = []
-    var currentQuestionIndex = 0
-    var userScore = 0
-    var answerButtons: [RadioButton] = []
-  
-  let sampleQuestions: [QuizQuestion] = [
-        QuizQuestion(question: "What is the capital of France?", choices: ["Paris", "London", "Berlin", "Madrid"], correctAnswer: 0),
-        QuizQuestion(question: "Which planet is known as the Red Planet?", choices: ["Mars", "Venus", "Earth", "Saturn"], correctAnswer: 0),
-        QuizQuestion(question: "What is the largest mammal in the world?", choices: ["Elephant", "Giraffe", "Blue Whale", "Lion"], correctAnswer: 2),]
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        answerButtons = [answerButton1, answerButton2, answerButton3, answerButton4]
-        displayRandomQuestions()
-
-=======
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet  var answerButton1: RadioButton!
@@ -73,7 +42,6 @@ class McqViewController: UIViewController {
         displayRandomQuestions() 
 
         // Do any additional setup after loading the view.
->>>>>>> Stashed changes
     }
     func displayRandomQuestions() {
           // Shuffle the sample questions to randomize their order
@@ -147,11 +115,6 @@ class McqViewController: UIViewController {
         userScore = 0
         displayRandomQuestions()
     }
-<<<<<<< Updated upstream
-    }
-    
- 
-=======
     
     
     
@@ -174,4 +137,3 @@ class McqViewController: UIViewController {
     */
 
 }
->>>>>>> Stashed changes

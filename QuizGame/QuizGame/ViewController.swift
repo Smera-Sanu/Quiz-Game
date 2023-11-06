@@ -7,29 +7,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-<<<<<<< Updated upstream
-    @IBOutlet weak var btnPlay: UIButton!
-    
-    @IBOutlet weak var btnLevels: UIButton!
-    @IBOutlet weak var btnCategories: UIButton!
-    @IBOutlet weak var selectedCategoryLabel: UILabel!
-    var selectedCategory: String?
-   // weak var categoryViewController: CategoryViewController?
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       // if segue.identifier == "backToMainSegue" {
-           if segue.identifier == "backToMainSegue" {
-                if let categoryViewController = segue.source as? CategoryViewController {
-                    selectedCategory = categoryViewController.selectedCategory
-                    selectedCategoryLabel.text = "Selected Category: \(selectedCategory ?? "No category selected")"
-                    print("Inside Main")
-                    print(selectedCategory ?? "No category selected")
-                }
-        }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-=======
     @IBOutlet weak var playButton: UIButton!
     
     @IBOutlet weak var categoriesButton: UIButton!
@@ -96,7 +73,6 @@ class ViewController: UIViewController {
                 categoriesButton.layer.shadowOpacity = 0.2
                 categoriesButton.layer.shadowOffset = CGSize(width: 0, height: 4)
                 categoriesButton.layer.shadowRadius = 3
->>>>>>> Stashed changes
     }
     
     @IBAction func categoriesClicked(_ sender: UIButton) {
