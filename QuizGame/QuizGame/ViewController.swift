@@ -1,4 +1,4 @@
-//
+//JUJUBEEE
 //  ViewController.swift
 //  QuizGame
 //
@@ -17,14 +17,14 @@ class ViewController: UIViewController {
     
     var selectedCategory: String? = nil
 
-       @IBAction func unwindFromShowCategories(_ unwindSegue: UIStoryboardSegue) {
-           if let sourceViewController = unwindSegue.source as? ShowCategories {
-               selectedCategory = sourceViewController.selectedCategory
-               if let selectedCategory = selectedCategory {
-                   showAlert(category: selectedCategory)
-               }
-           }
-       }
+//       @IBAction func unwindFromShowCategories(_ unwindSegue: UIStoryboardSegue) {
+//           if let sourceViewController = unwindSegue.source as? ShowCategories {
+//               selectedCategory = sourceViewController.selectedCategory
+//               if let selectedCategory = selectedCategory {
+//                   showAlert(category: selectedCategory)
+//               }
+//           }
+//       }
 
        func showAlert(category: String) {
            let alert = UIAlertController(title: "Selected Category", message: "You selected: \(category)", preferredStyle: .alert)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                 
                 // Add "Type" action
                 alert.addAction(UIAlertAction(title: "Type", style: .default) { [weak self] _ in
-                    self?.performSegue(withIdentifier: "PlayPress", sender: self)
+                    self?.performSegue(withIdentifier: "mcq", sender: self)
                 })
                 
                 // Add "MCQ" action
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     @IBAction func categoriesClicked(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "ShowCategories", sender: self)
+        performSegue(withIdentifier: "categorySegue", sender: self)
     }
     
     
@@ -75,26 +75,7 @@ class ViewController: UIViewController {
                 categoriesButton.layer.shadowRadius = 3
     }
     
-    @IBAction func categoriesClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "categorySegue", sender: self)
-    }
+  
     
-    @IBAction func playClicked(_ sender: UIButton) {
-        
-        let alert = UIAlertController(title: "Choose Game Type", message: "Select the game type", preferredStyle: .alert)
-        
-//        // Add "Type" action
-        alert.addAction(UIAlertAction(title: "Type", style: .default) { [weak self] _ in
-            self?.performSegue(withIdentifier: "Type", sender: self)
-        })
-        
-        // Add "MCQ" action
-        alert.addAction(UIAlertAction(title: "MCQ", style: .default) { [weak self] _ in
-            self?.performSegue(withIdentifier: "Mcq", sender: self)
-        })
-        
-        
-        present(alert, animated: true, completion: nil)
-    }
-    
+ 
 }

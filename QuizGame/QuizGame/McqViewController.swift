@@ -27,7 +27,7 @@ class McqViewController: UIViewController {
     var questions: [QuizQuestion] = [] // Load questions into this array
       var currentQuestionIndex = 0
       var userScore = 0
-      var answerButtons: [RadioButton] = [] 
+      var answerButtons: [RadioButton] = []
     
     let sampleQuestions: [QuizQuestion] = [
           QuizQuestion(question: "What is the capital of France?", choices: ["Paris", "London", "Berlin", "Madrid"], correctAnswer: 0),
@@ -39,7 +39,7 @@ class McqViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         answerButtons = [answerButton1, answerButton2, answerButton3, answerButton4]
-        displayRandomQuestions() 
+        displayRandomQuestions()
 
         // Do any additional setup after loading the view.
     }
@@ -66,13 +66,10 @@ class McqViewController: UIViewController {
                 button.isSelected = false
             }
             updateScoreLabel()
-<<<<<<< Updated upstream
-        } }
-=======
+        
         } else {
             showFinalScore()
         }}
->>>>>>> Stashed changes
     
     func updateScoreLabel() {
            scoreLabel.text = "Score: \(userScore)"
@@ -137,3 +134,4 @@ class McqViewController: UIViewController {
     */
 
 }
+

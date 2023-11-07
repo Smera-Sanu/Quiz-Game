@@ -4,7 +4,6 @@
 //
 //  Created by Smera on 2023-10-23.
 //
-
 import Foundation
 import UIKit
 
@@ -15,7 +14,7 @@ class CategoryTableViewCell: UITableViewCell {
     func configureCell(category: String) {
         // Customize the cell based on the category
         categoryLabel.text = category
-        
+
         // Set different colors and icons based on the category
         switch category {
         case "Geography":

@@ -7,45 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
-		7087BB672AE707F400D8AB9B /* McqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087BB662AE707F400D8AB9B /* McqViewController.swift */; };
-		7087BB692AE70CCA00D8AB9B /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087BB682AE70CCA00D8AB9B /* TypeViewController.swift */; };
-		7087BB6B2AE7104D00D8AB9B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087BB6A2AE7104D00D8AB9B /* RadioButton.swift */; };
-		7087BB6D2AE7114900D8AB9B /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087BB6C2AE7114900D8AB9B /* QuizQuestion.swift */; };
-=======
 		7053CE672AE5D1640031A487 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053CE662AE5D1640031A487 /* PlayViewController.swift */; };
 		7053CE692AE5D5620031A487 /* McqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053CE682AE5D5620031A487 /* McqViewController.swift */; };
 		7053CE6B2AE5D8E10031A487 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7053CE6A2AE5D8E10031A487 /* QuizQuestion.swift */; };
 		70720DDF2AE6D4E900FAA857 /* FinalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70720DDE2AE6D4E900FAA857 /* FinalScoreViewController.swift */; };
 		70720DE12AE6DAE500FAA857 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70720DE02AE6DAE500FAA857 /* RadioButton.swift */; };
 		70720DE32AE6FE6C00FAA857 /* ShowCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70720DE22AE6FE6C00FAA857 /* ShowCategories.swift */; };
->>>>>>> Stashed changes
+		70F9E7AF2AFAEDB400BE6613 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9E7AE2AFAEDB400BE6613 /* GlobalVariables.swift */; };
 		E239E19F2ACA39D100C79233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E19E2ACA39D100C79233 /* AppDelegate.swift */; };
 		E239E1A12ACA39D100C79233 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E1A02ACA39D100C79233 /* SceneDelegate.swift */; };
 		E239E1A32ACA39D100C79233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E1A22ACA39D100C79233 /* ViewController.swift */; };
 		E239E1A62ACA39D100C79233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A42ACA39D100C79233 /* Main.storyboard */; };
 		E239E1A82ACA39D200C79233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A72ACA39D200C79233 /* Assets.xcassets */; };
 		E239E1AB2ACA39D200C79233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A92ACA39D200C79233 /* LaunchScreen.storyboard */; };
-		E2523D742AE6C3AE00FD2E8A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */; };
-		E2523D762AE6C81C00FD2E8A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */; };
-		E2523D782AE6F52100FD2E8A /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */; };
-		E2F41BF12AE5CE2E00150145 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */; };
+		E26B28AC2AFAF4E200C814CE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< Updated upstream
-		7087BB662AE707F400D8AB9B /* McqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McqViewController.swift; sourceTree = "<group>"; };
-		7087BB682AE70CCA00D8AB9B /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
-		7087BB6A2AE7104D00D8AB9B /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
-		7087BB6C2AE7114900D8AB9B /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
-=======
 		7053CE662AE5D1640031A487 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		7053CE682AE5D5620031A487 /* McqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McqViewController.swift; sourceTree = "<group>"; };
 		7053CE6A2AE5D8E10031A487 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
 		70720DDE2AE6D4E900FAA857 /* FinalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreViewController.swift; sourceTree = "<group>"; };
 		70720DE02AE6DAE500FAA857 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		70720DE22AE6FE6C00FAA857 /* ShowCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCategories.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
+		70F9E7AE2AFAEDB400BE6613 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		E239E19B2ACA39D100C79233 /* QuizGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E239E19E2ACA39D100C79233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E239E1A02ACA39D100C79233 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,10 +39,7 @@
 		E239E1A72ACA39D200C79233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E239E1AA2ACA39D200C79233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E239E1AC2ACA39D200C79233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
-		E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
-		E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70F9E7AD2AFAED9200BE6613 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		E239E1922ACA39D100C79233 = {
 			isa = PBXGroup;
 			children = (
 				E239E19D2ACA39D100C79233 /* QuizGame */,
 				E239E19C2ACA39D100C79233 /* Products */,
+				70F9E7AD2AFAED9200BE6613 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,23 +87,14 @@
 				E239E1A72ACA39D200C79233 /* Assets.xcassets */,
 				E239E1A92ACA39D200C79233 /* LaunchScreen.storyboard */,
 				E239E1AC2ACA39D200C79233 /* Info.plist */,
-<<<<<<< Updated upstream
-				E2F41BF02AE5CE2E00150145 /* CategoryViewController.swift */,
-				E2523D732AE6C3AE00FD2E8A /* PlayViewController.swift */,
-				E2523D752AE6C81C00FD2E8A /* CategoryTableViewCell.swift */,
-				E2523D772AE6F52100FD2E8A /* GlobalVariables.swift */,
-				7087BB662AE707F400D8AB9B /* McqViewController.swift */,
-				7087BB682AE70CCA00D8AB9B /* TypeViewController.swift */,
-				7087BB6A2AE7104D00D8AB9B /* RadioButton.swift */,
-				7087BB6C2AE7114900D8AB9B /* QuizQuestion.swift */,
-=======
 				7053CE662AE5D1640031A487 /* PlayViewController.swift */,
 				7053CE682AE5D5620031A487 /* McqViewController.swift */,
 				7053CE6A2AE5D8E10031A487 /* QuizQuestion.swift */,
 				70720DDE2AE6D4E900FAA857 /* FinalScoreViewController.swift */,
 				70720DE02AE6DAE500FAA857 /* RadioButton.swift */,
 				70720DE22AE6FE6C00FAA857 /* ShowCategories.swift */,
->>>>>>> Stashed changes
+				70F9E7AE2AFAEDB400BE6613 /* GlobalVariables.swift */,
+				E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */,
 			);
 			path = QuizGame;
 			sourceTree = "<group>";
@@ -189,29 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-				E2F41BF12AE5CE2E00150145 /* CategoryViewController.swift in Sources */,
-				E2523D742AE6C3AE00FD2E8A /* PlayViewController.swift in Sources */,
-				7087BB672AE707F400D8AB9B /* McqViewController.swift in Sources */,
-				7087BB692AE70CCA00D8AB9B /* TypeViewController.swift in Sources */,
-=======
 				7053CE6B2AE5D8E10031A487 /* QuizQuestion.swift in Sources */,
 				7053CE672AE5D1640031A487 /* PlayViewController.swift in Sources */,
 				70720DE32AE6FE6C00FAA857 /* ShowCategories.swift in Sources */,
 				70720DDF2AE6D4E900FAA857 /* FinalScoreViewController.swift in Sources */,
 				7053CE692AE5D5620031A487 /* McqViewController.swift in Sources */,
->>>>>>> Stashed changes
 				E239E1A32ACA39D100C79233 /* ViewController.swift in Sources */,
+				E26B28AC2AFAF4E200C814CE /* CategoryTableViewCell.swift in Sources */,
+				70F9E7AF2AFAEDB400BE6613 /* GlobalVariables.swift in Sources */,
 				E239E19F2ACA39D100C79233 /* AppDelegate.swift in Sources */,
-				7087BB6D2AE7114900D8AB9B /* QuizQuestion.swift in Sources */,
-				E2523D782AE6F52100FD2E8A /* GlobalVariables.swift in Sources */,
-				7087BB6B2AE7104D00D8AB9B /* RadioButton.swift in Sources */,
 				E239E1A12ACA39D100C79233 /* SceneDelegate.swift in Sources */,
-<<<<<<< Updated upstream
-				E2523D762AE6C81C00FD2E8A /* CategoryTableViewCell.swift in Sources */,
-=======
 				70720DE12AE6DAE500FAA857 /* RadioButton.swift in Sources */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
