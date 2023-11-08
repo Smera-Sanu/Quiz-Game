@@ -84,14 +84,15 @@ class PlayViewController: UIViewController {
           }
       }
 
-      func stopTimer() {
-          timer?.invalidate()
-      }
-  
+     
 
        func updateScoreLabel() {
            scoreLabel.text = "Score: \(userScore)"
        }
+    func stopTimer() {
+        timer?.invalidate()
+    }
+
 
 
     /*
