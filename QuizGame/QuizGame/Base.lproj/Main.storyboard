@@ -38,14 +38,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-vR-1Na">
-                                <rect key="frame" x="159" y="478" width="75" height="35"/>
+                                <rect key="frame" x="158" y="478" width="78" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                                 <connections>
                                     <action selector="submitAnswer:" destination="KPD-NV-wYC" eventType="touchUpInside" id="TxJ-84-xJ3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6p-XH-5DE">
+                                <rect key="frame" x="188" y="54" width="175" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mGa-VH-Az5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -53,13 +60,14 @@
                     <navigationItem key="navigationItem" id="ZGr-xf-ffe"/>
                     <connections>
                         <outlet property="answerTextField" destination="4eR-SM-eoO" id="brv-px-Hjl"/>
-                        <outlet property="questionLabel" destination="HKA-cF-IpR" id="Ge1-Sg-b8V"/>
+                        <outlet property="questionLabel" destination="HKA-cF-IpR" id="sTh-d0-omw"/>
                         <outlet property="scoreLabel" destination="NhM-be-ymV" id="X04-gE-S8p"/>
+                        <outlet property="timerLabel" destination="d6p-XH-5DE" id="d3Y-sp-Kzx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPU-g6-K84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237" y="-756"/>
+            <point key="canvasLocation" x="-237.40458015267174" y="-756.33802816901414"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

@@ -8,6 +8,7 @@
 import UIKit
 
 class PlayViewController: UIViewController {
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -21,11 +22,14 @@ class PlayViewController: UIViewController {
             ]
             var currentQuestionIndex = 0
             var userScore = 0
+        var timer: Timer?
+        var timeRemaining: Int = 30
         
     
     override func viewDidLoad() {
         super.viewDidLoad()
         displayRandomQuestion()
+        startTimer()
     }
     func displayRandomQuestion() {
            if currentQuestionIndex < questions.count {
@@ -41,6 +45,7 @@ class PlayViewController: UIViewController {
            answerTextField.isHidden = true
            let finalScoreText = "Your Score: \(userScore)"
            scoreLabel.text = finalScoreText
+           stopTimer()
        }
 
        @IBAction func submitAnswer(_ sender: UIButton) {
@@ -66,6 +71,23 @@ class PlayViewController: UIViewController {
            updateScoreLabel()
            displayRandomQuestion()
        }
+    func startTimer() {
+          timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+      }
+    @objc func updateTimer() {
+          timeRemaining -= 1
+          if timeRemaining >= 0 {
+              timerLabel.text = "Time: \(timeRemaining) sec"
+          } else {
+              timerLabel.text = "Time's up!"
+              stopTimer()
+          }
+      }
+
+      func stopTimer() {
+          timer?.invalidate()
+      }
+  
 
        func updateScoreLabel() {
            scoreLabel.text = "Score: \(userScore)"
