@@ -48,19 +48,38 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            selectedCategory = filteredCategories[indexPath.row]
+            print("Inside category")
+            print(selectedCategory!)
+            
+            // Notify the ViewController about the selected category
+            performSegue(withIdentifier: "backToMainSegue", sender: self)
+        }
+    
+    
+//    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        selectedCategory = filteredCategories[indexPath.row]
+//
+//        // Notify the McqViewController about the selected category
+//        NotificationCenter.default.post(name: NSNotification.Name("CategorySelected"), object: selectedCategory)
+//        
+//        // Dismiss the CategoryViewController if needed
+//        dismiss(animated: true, completion: nil)
+//    }
 
-        selectedCategory = filteredCategories[indexPath.row]
-        print("Inside category")
-        print(selectedCategory!)
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "backToMainSegue" {
+                if let viewController = segue.destination as? ViewController {
+                    viewController.selectedCategory = selectedCategory
+                }
+            }
+        }
+    
+    
+    
+        
+        @IBAction func backButtonPressed(_ sender: UIButton) {
+            self.performSegue(withIdentifier: "backToMainSegue", sender: self)
+        }
     }
 
-    @IBAction func backButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "backToMainSegue", sender: self)
-    }
-
-
-
-
-}
