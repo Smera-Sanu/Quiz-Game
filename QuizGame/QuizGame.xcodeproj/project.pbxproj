@@ -21,6 +21,8 @@
 		E239E1A82ACA39D200C79233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A72ACA39D200C79233 /* Assets.xcassets */; };
 		E239E1AB2ACA39D200C79233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E1A92ACA39D200C79233 /* LaunchScreen.storyboard */; };
 		E26B28AC2AFAF4E200C814CE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */; };
+		E2EE12A82B16C0AE003327EA /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE12A72B16C0AE003327EA /* AddQuestionViewController.swift */; };
+		E2EE12AA2B16C993003327EA /* AddQuestionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE12A92B16C993003327EA /* AddQuestionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		E239E1AA2ACA39D200C79233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E239E1AC2ACA39D200C79233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E2EE12A72B16C0AE003327EA /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		E2EE12A92B16C993003327EA /* AddQuestionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			children = (
 				E239E19E2ACA39D100C79233 /* AppDelegate.swift */,
 				E239E1A02ACA39D100C79233 /* SceneDelegate.swift */,
+				E2EE12A72B16C0AE003327EA /* AddQuestionViewController.swift */,
 				E239E1A22ACA39D100C79233 /* ViewController.swift */,
 				E239E1A42ACA39D100C79233 /* Main.storyboard */,
 				E239E1A72ACA39D200C79233 /* Assets.xcassets */,
@@ -95,6 +100,7 @@
 				70720DE22AE6FE6C00FAA857 /* ShowCategories.swift */,
 				70F9E7AE2AFAEDB400BE6613 /* GlobalVariables.swift */,
 				E26B28AB2AFAF4E200C814CE /* CategoryTableViewCell.swift */,
+				E2EE12A92B16C993003327EA /* AddQuestionDelegate.swift */,
 			);
 			path = QuizGame;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			files = (
 				7053CE6B2AE5D8E10031A487 /* QuizQuestion.swift in Sources */,
 				7053CE672AE5D1640031A487 /* PlayViewController.swift in Sources */,
+				E2EE12AA2B16C993003327EA /* AddQuestionDelegate.swift in Sources */,
+				E2EE12A82B16C0AE003327EA /* AddQuestionViewController.swift in Sources */,
 				70720DE32AE6FE6C00FAA857 /* ShowCategories.swift in Sources */,
 				70720DDF2AE6D4E900FAA857 /* FinalScoreViewController.swift in Sources */,
 				7053CE692AE5D5620031A487 /* McqViewController.swift in Sources */,

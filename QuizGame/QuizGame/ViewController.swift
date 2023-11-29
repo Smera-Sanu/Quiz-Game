@@ -9,6 +9,7 @@ import UIKit
 class ViewController: UIViewController {
     
    
+    @IBOutlet weak var createnewquiz: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
     @IBOutlet weak var selectedCat: UILabel!
@@ -33,7 +34,16 @@ class ViewController: UIViewController {
 //            }
 //        }
 //    }
+    @IBAction func createNewQuizClicked(_ sender: UIButton) {
+      
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let addQuestionVC = storyboard.instantiateViewController(withIdentifier: "AddQuestionViewControllerSegue") as? AddQuestionViewController else {
+                fatalError("Unable to instantiate AddQuestionViewController from the storyboard")
+            }
+            present(addQuestionVC, animated: true, completion: nil)
+        }
 
+    
     @objc func categorySelected(_ notification: Notification) {
         if let category = notification.object as? String {
             selectedCategory = category

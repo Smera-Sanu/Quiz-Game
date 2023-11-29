@@ -7,7 +7,7 @@
 
 import UIKit
 
-class McqViewController: UIViewController {
+class McqViewController: UIViewController , AddQuestionDelegate{
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var timerLabel: UILabel!
@@ -23,10 +23,11 @@ class McqViewController: UIViewController {
           var userScore = 0
           var answerButtons: [RadioButton] = []
         
-        let sampleQuestions: [QuizQuestion] = [
+    var sampleQuestions: [QuizQuestion] = [
               QuizQuestion(question: "What is the capital of France?", choices: ["Paris", "London", "Berlin", "Madrid"], correctAnswer: 0),
               QuizQuestion(question: "Which planet is known as the Red Planet?", choices: ["Mars", "Venus", "Earth", "Saturn"], correctAnswer: 0),
               QuizQuestion(question: "What is the largest mammal in the world?", choices: ["Elephant", "Giraffe", "Blue Whale", "Lion"], correctAnswer: 2),
+              
               
           ]
         
@@ -37,9 +38,28 @@ class McqViewController: UIViewController {
             displayRandomQuestions()
             
             startGame()
+        
+                   
+                   // Load questions from UserDefaults
+                   loadQuestionsFromUserDefaults()
+                   
+                   // Ensure the initial display of questions includes the loaded ones
+                   displayRandomQuestions()
+                   // Other setup as needed
 
            
         }
+    
+    
+    func loadQuestionsFromUserDefaults() {
+        if let savedQuestionsData = UserDefaults.standard.data(forKey: "savedQuestions") {
+            let decoder = JSONDecoder()
+            if let loadedQuestions = try? decoder.decode([QuizQuestion].self, from: savedQuestionsData) {
+                sampleQuestions = loadedQuestions
+            }
+        }
+    }
+
         func displayRandomQuestions() {
               
               let shuffledQuestions = sampleQuestions.shuffled()
@@ -144,4 +164,35 @@ class McqViewController: UIViewController {
                 
                 stopTimer()
             }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let addQuestionVC = segue.destination as? AddQuestionViewController {
+                addQuestionVC.delegate = self
+            }
         }
+        
+        // Implement the delegate method
+    func addNewQuestion(question: String, options: [String], correctAnswer: Int) {
+        let newQuestion = QuizQuestion(question: question, choices: options, correctAnswer: correctAnswer)
+        sampleQuestions.append(newQuestion)
+        
+        // Save updated questions to UserDefaults
+        saveQuestionsToUserDefaults()
+        
+        // Update the questions array used in the quiz
+        questions = Array(sampleQuestions.prefix(10))
+        
+        // Display the updated set of questions
+        displayQuestion()
+    }
+
+
+    func saveQuestionsToUserDefaults() {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(sampleQuestions) {
+            UserDefaults.standard.set(encoded, forKey: "savedQuestions")
+        }
+    }
+
+    }
