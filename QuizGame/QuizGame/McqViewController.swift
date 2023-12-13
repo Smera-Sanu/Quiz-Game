@@ -26,19 +26,19 @@ class McqViewController: UIViewController , AddQuestionDelegate{
           var userScore = 0
           var answerButtons: [RadioButton] = []
         
-//    var sampleQuestions: [QuizQuestion] = [
-//        QuizQuestion(question: "Which actor played the character of Tony Stark in the Marvel Cinematic Universe?", choices: ["Chris Hemsworth", "Chris Evans", "Robert Downey Jr.", "Mark Ruffalo"], correctAnswer: 2, hint: "He is also known as Iron Man."),
-//            QuizQuestion(question: "What is the highest-grossing film of all time?", choices: ["Avengers: Endgame", "Avatar", "Titanic", "The Lion King"], correctAnswer: 0, hint: "This film features a large ensemble cast of superheroes."),
-//            QuizQuestion(question: "Who is known as the 'King of Pop'?", choices: ["Prince", "Michael Jackson", "Elvis Presley", "Madonna"], correctAnswer: 1, hint: "His famous albums include 'Thriller' and 'Bad'."),
-//            QuizQuestion(question: "In which year did the first episode of 'Friends' air?", choices: ["1990", "1994", "1998", "2002"], correctAnswer: 1, hint: "The show revolves around a group of six friends living in New York."),
-//            QuizQuestion(question: "What is the name of the wizarding school in the Harry Potter series?", choices: ["Hogwarts", "Durmstrang", "Beauxbatons", "Ilvermorny"], correctAnswer: 0, hint: "The school is known for its magical education."),
-//
-//        QuizQuestion(question: "Which film features a toy cowboy named Woody?",
-//                     choices: ["Toy Story", "WallE", "Lion King", "Moana"],
-//                     correctAnswer: 0,
-//                     hint: "The main character is a pull-string cowboy doll.")
-//
-//          ]
+    var sampleQuestions: [QuizQuestion] = [
+        QuizQuestion(question: "Which actor played the character of Tony Stark in the Marvel Cinematic Universe?", choices: ["Chris Hemsworth", "Chris Evans", "Robert Downey Jr.", "Mark Ruffalo"], correctAnswer: 2, hint: "He is also known as Iron Man."),
+            QuizQuestion(question: "What is the highest-grossing film of all time?", choices: ["Avengers: Endgame", "Avatar", "Titanic", "The Lion King"], correctAnswer: 0, hint: "This film features a large ensemble cast of superheroes."),
+            QuizQuestion(question: "Who is known as the 'King of Pop'?", choices: ["Prince", "Michael Jackson", "Elvis Presley", "Madonna"], correctAnswer: 1, hint: "His famous albums include 'Thriller' and 'Bad'."),
+            QuizQuestion(question: "In which year did the first episode of 'Friends' air?", choices: ["1990", "1994", "1998", "2002"], correctAnswer: 1, hint: "The show revolves around a group of six friends living in New York."),
+            QuizQuestion(question: "What is the name of the wizarding school in the Harry Potter series?", choices: ["Hogwarts", "Durmstrang", "Beauxbatons", "Ilvermorny"], correctAnswer: 0, hint: "The school is known for its magical education."),
+
+        QuizQuestion(question: "Which film features a toy cowboy named Woody?",
+                     choices: ["Toy Story", "WallE", "Lion King", "Moana"],
+                     correctAnswer: 0,
+                     hint: "The main character is a pull-string cowboy doll.")
+
+          ]
         
         
         override func viewDidLoad() {
