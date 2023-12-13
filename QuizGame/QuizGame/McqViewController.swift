@@ -16,6 +16,9 @@ class McqViewController: UIViewController , AddQuestionDelegate{
     @IBOutlet  var answerButton3: RadioButton!
     @IBOutlet  var answerButton4: RadioButton!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var btnHint: UIButton!
+    @IBOutlet weak var lblHint: UILabel!
+    var flag = 0
     var timer: Timer?
     var timeRemaining: Int = 10
     var questions: [QuizQuestion] = []
@@ -23,13 +26,19 @@ class McqViewController: UIViewController , AddQuestionDelegate{
           var userScore = 0
           var answerButtons: [RadioButton] = []
         
-    var sampleQuestions: [QuizQuestion] = [
-              QuizQuestion(question: "What is the capital of France?", choices: ["Paris", "London", "Berlin", "Madrid"], correctAnswer: 0),
-              QuizQuestion(question: "Which planet is known as the Red Planet?", choices: ["Mars", "Venus", "Earth", "Saturn"], correctAnswer: 0),
-              QuizQuestion(question: "What is the largest mammal in the world?", choices: ["Elephant", "Giraffe", "Blue Whale", "Lion"], correctAnswer: 2),
-              
-              
-          ]
+//    var sampleQuestions: [QuizQuestion] = [
+//        QuizQuestion(question: "Which actor played the character of Tony Stark in the Marvel Cinematic Universe?", choices: ["Chris Hemsworth", "Chris Evans", "Robert Downey Jr.", "Mark Ruffalo"], correctAnswer: 2, hint: "He is also known as Iron Man."),
+//            QuizQuestion(question: "What is the highest-grossing film of all time?", choices: ["Avengers: Endgame", "Avatar", "Titanic", "The Lion King"], correctAnswer: 0, hint: "This film features a large ensemble cast of superheroes."),
+//            QuizQuestion(question: "Who is known as the 'King of Pop'?", choices: ["Prince", "Michael Jackson", "Elvis Presley", "Madonna"], correctAnswer: 1, hint: "His famous albums include 'Thriller' and 'Bad'."),
+//            QuizQuestion(question: "In which year did the first episode of 'Friends' air?", choices: ["1990", "1994", "1998", "2002"], correctAnswer: 1, hint: "The show revolves around a group of six friends living in New York."),
+//            QuizQuestion(question: "What is the name of the wizarding school in the Harry Potter series?", choices: ["Hogwarts", "Durmstrang", "Beauxbatons", "Ilvermorny"], correctAnswer: 0, hint: "The school is known for its magical education."),
+//
+//        QuizQuestion(question: "Which film features a toy cowboy named Woody?",
+//                     choices: ["Toy Story", "WallE", "Lion King", "Moana"],
+//                     correctAnswer: 0,
+//                     hint: "The main character is a pull-string cowboy doll.")
+//
+//          ]
         
         
         override func viewDidLoad() {
@@ -73,7 +82,11 @@ class McqViewController: UIViewController , AddQuestionDelegate{
               displayQuestion()
           }
         
+    @IBAction func btnHintTapped(_ sender: UIButton) {
+        lblHint.isHidden = false
+    }
     func displayQuestion() {
+        lblHint.isHidden = true 
         if currentQuestionIndex < questions.count {
             let currentQuestion = questions[currentQuestionIndex]
             questionLabel.text = currentQuestion.question
@@ -82,6 +95,9 @@ class McqViewController: UIViewController , AddQuestionDelegate{
                 button.setTitle(currentQuestion.choices[index], for: .normal)
                 button.isSelected = false
             }
+            
+            lblHint.text = "Hint: \(currentQuestion.hint ?? "")" // Set the hint text
+
             updateScoreLabel()
             
         } else {
@@ -154,6 +170,7 @@ class McqViewController: UIViewController , AddQuestionDelegate{
             
             
             func showFinalScore() {
+                btnHint.isHidden = true
                 questionLabel.text = "Quiz Completed!"
                       answerButton1.isHidden  = true
                       answerButton2.isHidden  = true

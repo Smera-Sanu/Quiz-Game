@@ -10,4 +10,10 @@ struct QuizQuestion : Codable {
     var question: String
     var choices: [String]
     var correctAnswer: Int
+    var hint: String?
+}
+struct QuizItem {
+    var question: String
+    var answer: String
+    var hint: String
 }
